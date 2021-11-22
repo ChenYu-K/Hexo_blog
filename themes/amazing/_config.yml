@@ -1,0 +1,417 @@
+# Version of the configuration file
+version: 4.0.0
+# Icarus theme variant, can be "default" or "cyberpunk"
+variant: default
+# Path or URL to the website's logo
+logo: https://cdn.jsdelivr.net/gh/ChenYu-K/ChenYu-K.github.io@master/img/logo.svg #/img/logo.svg
+# Page metadata configurations
+head:
+    # URL or path to the website's icon
+    favicon: https://cdn.jsdelivr.net/gh/ChenYu-K/ChenYu-K.github.io@master/img/logo.svg #/img/favicon.svg
+    # Open Graph metadata
+    # https://hexo.io/docs/helpers.html#open-graph
+    open_graph:
+        # Page title (og:title) (optional)
+        # You should leave this blank for most of the time
+        title: 
+        # Page type (og:type) (optional)
+        # You should leave this blank for most of the time
+        type:
+        # Page URL (og:url) (optional)
+        # You should leave this blank for most of the time
+        url:
+        # Page cover (og:image) (optional)
+        # You should leave this blank for most of the time
+        image:
+        # Site name (og:site_name) (optional)
+        # You should leave this blank for most of the time
+        site_name:
+        # Page author (article:author) (optional)
+        # You should leave this blank for most of the time
+        author: 
+        # Page description (og:description) (optional)
+        # You should leave this blank for most of the time
+        description: 
+        # Twitter card type (twitter:card)
+        twitter_card: 
+        # Twitter ID (twitter:creator)
+        twitter_id: 
+        # Twitter Site (twitter:site)
+        twitter_site: 
+        # Google+ profile link (deprecated)
+        google_plus: 
+        # Facebook admin ID
+        fb_admins: 
+        # Facebook App ID
+        fb_app_id: 
+    # Structured data of the page
+    # https://developers.google.com/search/docs/guides/intro-structured-data
+    structured_data:
+        # Page title (optional)
+        # You should leave this blank for most of the time
+        title: 
+        # Page description (optional)
+        # You should leave this blank for most of the time
+        description: 
+        # Page URL (optional)
+        # You should leave this blank for most of the time
+        url: 
+        # Page author (article:author) (optional)
+        # You should leave this blank for most of the time
+        author: 
+        # Page images (optional)
+        # You should leave this blank for most of the time
+        image: 
+    # Additional HTML meta tags in an array
+    meta:
+        # Meta tag specified in <attribute>=<value> style
+        # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
+        - <meta name="author" content="ChenYu" />
+        - <meta name="keywords" content="Abaqus,ChenYu,Python,bridge" />
+        - <meta name="robots" content="all" />
+    # URL or path to the website's RSS atom.xml
+    rss: "https://node2.feed43.com/chenyu-k.xml"
+# Page top navigation bar configurations
+navbar:
+    # Naviagtion menu items
+    menu:
+        Home: /
+        Archives: /archives
+        Categories: /categories
+        Album: /album
+        About: /about
+        Friend: /friend
+        # Message: /message
+        # Self-talking: /self-talking
+    # Links to be shown on the right of the navigation bar
+    links:
+        Join Gitter:
+            icon: fab fa-gitter
+            url: 'https://gitter.im/ChenYu-K/community#'
+        My GitHub:
+            icon: fab fa-github
+            url: 'https://github.com/ChenYu-K'
+# Page footer configurations
+footer:
+    # Links to be shown on the right of the footer section
+    links:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        Attribution 4.0 International:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by/4.0/'
+        Creative-commons-nc:
+            icon: fab fa-creative-commons-nc
+            url: 'https://creativecommons.org/licenses/by/4.0/'
+        Download on GitHub:
+            icon: fab fa-github
+            url: 'https://github.com/ChenYu-K'
+# Article related configurations
+article:
+    # Code highlight settings
+    highlight:
+        # Code highlight themes
+        # https://github.com/highlightjs/highlight.js/tree/master/src/styles
+        theme: atom-one-dark
+        # Show copy code button
+        clipboard: true
+        # Default folding status of the code blocks. Can be "", "folded", "unfolded"
+        fold: unfolded
+    # Whether to show estimated article reading time
+    readtime: true
+    # Article licensing block
+    licenses:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        Attribution:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by/4.0/'
+        Noncommercial:
+            icon: fab fa-creative-commons-nc
+            url: 'https://creativecommons.org/licenses/by-nc/4.0/'
+# Search plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
+search:
+    type: insight
+# Comment plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
+#comment:
+#    type: disqus
+#    # Disqus shortname
+#    shortname: ''
+# Comment plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
+# comment:
+#     type: gitalk
+#     language: zh-CN #zh-CN #Localization language key, en, zh-CN and zh-TW are currently available.
+#     owner: ChenYu-K         # (required) GitHub user name
+#     repo: ChenYu-K.github.io          # (required) GitHub repository name
+#     client_id: eeccaadc8ba876b69c84     # (required) OAuth application client id
+#     client_secret: 4c250bf612f26889b183b33b0176659deb6a4c34 # (required) OAuth application client secret
+#     admin: ChenYu-K
+#     create_issue_manually: true
+#     distraction_free_mode: false
+#     has_hot_recommend: true # 是否有热门推荐
+#     has_latest_comment: true #是否有最新评论
+#     proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token #解决登录后403问题
+# comment:
+#     type: valine
+#     app_id: rOtVIhvG3kd7QkMKe3naSU9R-gzGzoHsz
+#     app_key: F2sNV0CkqvbPat45di3DEn3z
+#     notify: false
+#     verify: false
+#     avatar: 'mp'
+#     placeholder: '留下您的高见！'
+#     has_latest_comment: true #是否有最新评论 true-有，false-无
+#     owner: 辣椒の酱 #博主名 最新评论标注[博主]
+#     required_fields: ['nick', 'mail', 'link']
+#     lang: en #zh-CN zh-TW en ja
+
+
+# utteranc site: https://utteranc.es/
+# comment:
+#     type: utteranc
+#     repo: removeif/utteranc_comment # (required) GitHub userName & repository name
+#     issue_term: pathname 
+#     issue_number: 
+#     label: 
+#     theme: github-light
+
+# Donate plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
+    # donates:
+    # # Alipay donate button configurations
+    # -
+    #     # Donation entry name
+    #     type: alipay
+    #     # Qrcode image URL
+    #     qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135456.png'
+    # -
+    #     # Donation entry name
+    #     type: wechat
+    #     # Qrcode image URL
+    #     qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135550.png'
+    # # "Buy me a coffee" donate button configurations
+#    -
+#        type: buymeacoffee
+#        # URL to the "Buy me a coffee" page
+#        url: ''
+#    # Patreon donate button configurations
+#    -
+#        type: patreon
+#        # URL to the Patreon page
+#        url: ''
+#    # Paypal donate button configurations
+#    -
+#        type: paypal
+#        # Paypal business ID or email address
+#        business: ''
+#        # Currency code
+#        currency_code: USD
+#    # Wechat donate button configurations
+#    -
+#        type: wechat
+#        # Wechat qrcode image URL
+#        qrcode: ''
+# Share plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
+share:
+    type: sharethis
+    # URL to the ShareThis share plugin script
+    install_url: 'https://platform-api.sharethis.com/js/sharethis.js#property=611e4235a968dd001342b028&product=inline-share-buttons'
+# Sidebar configurations.
+# Please be noted that a sidebar is only visible when it has at least one widget
+sidebar:
+    # Left sidebar configurations
+    left:
+        # Whether the sidebar sticks to the top when page scrolls
+        sticky: true
+    # Right sidebar configurations
+    right:
+        # Whether the sidebar sticks to the top when page scrolls
+        sticky: false
+# Sidebar widget configurations
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
+widgets:
+    # Table of contents widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: toc
+        # Select show index
+        index: true
+    # Profile widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: profile
+        # Author name
+        author: ChenYu-K
+        # Author title
+        author_title: Memento Moir
+        # Author's current location
+        location: Osaka.JP
+        # URL or path to the avatar image
+        avatar: https://cdn.jsdelivr.net/gh/ChenYu-K/ChenYu-K.github.io@master/img/kaede.jpg
+        # Whether show the rounded avatar image
+        avatar_rounded: true
+        # Email address for the Gravatar
+        gravatar:
+        # URL or path for the follow button
+        follow_link: 'https://github.com/ChenYu-K'
+        # Links to be shown on the bottom of the profile widget
+        social_links:
+            ORCID:
+                icon: fab fa-orcid
+                url: 'https://orcid.org/0000-0002-1187-4761'
+            Researchgate:
+                icon: fab fa-researchgate
+                url: 'https://www.researchgate.net/profile/Chen-Yu-69'
+            Email:
+                icon: fa fa-envelope
+                url: 'mailto:cy519234505@gmail.com'
+            CSDN:
+                icon: fab fa-cuttlefish
+                url: 'https://blog.csdn.net/kaede0v0'
+            RSS:
+                icon: fas fa-rss
+                url: 'https://node2.feed43.com/chenyu-k.xml'
+        has_hitokoto: true
+    # Recommendation links widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: links
+        # Names and URLs of the sites
+        links:
+            Hexo: 'https://hexo.io'
+            -: '-'
+    # Latest comment widget configurations
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: right
+    #     type: latest_comment
+    # # Recent posts widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: recent_posts
+    # Categories widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: categories
+    # Archives widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: archives
+    # Tags widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: tags
+    # Google FeedBurner email subscription widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: subscribe_email
+        # Hint text under the email input
+        description: 
+        # Feedburner ID
+        feedburner_id: ''
+    # Google AdSense unit configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: adsense
+
+# AdSense client ID
+adsense_client_id: #'ca-pub-6343805421927634'
+# AdSense AD unit ID
+adsense_slot_id: ''
+# article head ad
+article_head_has_ad: true
+# comment head ad
+comment_head_has_ad: true
+# other ad
+index_zero_position_ad: true
+index_ad_positions: 2,5,9 #首页adsense放置广告的位置，尽量少配置些，多了有可能不显示。一位的时候，加个逗号，如1,或者1,5,9
+# Plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
+plugins:
+    # Enable page startup animations
+    animejs: true
+    # Show the "back to top" button
+    back_to_top: true
+    # Baidu Analytics plugin settings
+    # https://tongji.baidu.com
+    baidu_analytics:
+        # Baidu Analytics tracking ID
+        tracking_id: 63087a5cd884bc10b1786c30881ea77b
+    # BuSuanZi site/page view counter
+    # https://busuanzi.ibruce.info
+    busuanzi: false
+    # CNZZ statistics
+    # https://www.umeng.com/web
+    # cnzz:
+    # #     # CNZZ tracker id
+    #     id: 1280171349
+    # #     # CNZZ website id
+    #     web_id: 1280171349
+    # Enable the lightGallery and Justified Gallery plugins
+    gallery: true
+    # Google Analytics plugin settings
+    # https://analytics.google.com
+    google_analytics:
+        # Google Analytics tracking ID
+        tracking_id: G-WJGZ6SSDC8
+    # Hotjar user feedback plugin
+    # https://www.hotjar.com/
+    hotjar:
+        # Hotjar site id
+        site_id: 2567446
+    # Enable the KaTeX math typesetting supprot
+    # https://katex.org/
+    katex: true
+    # Enable the MathJax math typesetting support
+    # https://www.mathjax.org/
+    mathjax: false
+    # Enable the Outdated Browser plugin
+    # http://outdatedbrowser.com/
+    outdated_browser: false
+    # Show a progress bar at top of the page on page loading
+    progressbar: true
+#https://cdn.jsdelivr.net/gh/ChenYu-K/ChenYu-K.github.io@master/img/kaede.jpg
+# CDN provider settings
+# https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
+providers:
+    # Name or URL template of the JavaScript and/or stylesheet CDN provider
+    cdn: loli
+    # Name or URL template of the webfont CDN provider
+    fontcdn: loli
+    # Name or URL of the fontawesome icon font CDN provider
+    iconcdn: loli
+    # https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v1.0.6/json_data/record.json, cdn前缀，对于hexo new page 页面中引用的资源文件不生效，需要手动改，如friend友链页中引用的资源
+    # my_cdn_pre: https://cdn.jsdelivr.net/gh/removeif/removeif-demo@v1.0.8/ #https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v2.2.1
+
+#copyright
+siteYear: 2021
+
+
+has_copyright: true
+footer_copyright_dsec: <hr /><img src='https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/moeicp.png' width = '18' height= '18'><a href="https://icp.gov.moe/?keyword=20210077" target="_blank">萌ICP备20210077号</a> &nbsp; &#124; &nbsp;&nbsp; <br>
+                       <script type="text/javascript" src="//rf.revolvermaps.com/0/0/3.js?i=57pzg8p2341&amp;b=6&amp;s=0&amp;m=0&amp;cl=ffffff&amp;co=010020&amp;cd=aa0000&amp;v0=60&amp;v1=60&amp;r=1" async="async"></script> &#124; &nbsp;
+                       <a href='https://alibabacloud.com'><img src='https://img.shields.io/badge/Ali%20Clound-DNS-brightgreen?logo=Alibaba%20Cloud'></a> &nbsp;
+                       <a href='https://jsdelivr.com/'><img src='https://img.shields.io/badge/jsDelivr-CDN-orange?logo=jsDelivr'> </a>&nbsp;
+                       <a href='https://analytics.google.com/'><img src='https://img.shields.io/badge/Google%20Cloud-Analytics-blue?logo=Google%20Analytics'> </a>&nbsp;
+                       
+
+website_start_time: 2021/07/31 00:00:00 #网站运行开始时间,不填不显示
+footer_registered_no:  #备案号
+side_music_netease_id: 261151888 #侧边栏网易云歌单id
+busuanzi_only_count: false #当上面plugins中busuanzi: true时，此配置busuanzi_only_count为true时，网站不显示不蒜子统计数据，但是会每次统计。false时显示统计数据。
+has_live_2D_switch: false #live2D开关 true-开 false-关
+use_pjax: false #是否pjax
