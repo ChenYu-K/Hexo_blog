@@ -2,6 +2,7 @@
 title: 如何使用CUDA对abaqus进行加速
 date: 2021-11-20 15:01:24
 tags: ABAQUS
+toc: true
 ---
 
 本文介绍了如何使用 [Nvidia CUDA](https://developer.nvidia.com/zh-cn/cuda-toolkit)[^1]的加速功能,使Abaqus计算加速。

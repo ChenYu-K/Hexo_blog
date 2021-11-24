@@ -7,7 +7,7 @@ toc: true
 recommend: 0.6
 ---
 
-## 材料試験自動データ処理
+# 材料試験自動データ処理
 ---
 
 [中文](/lang/material-test/)
@@ -23,7 +23,7 @@ recommend: 0.6
 
 <script src="https://gist.github.com/ChenYu-K/1e1d40352924237fd8f503b637983d3b.js"></script>
 
-### 導入
+## 導入
 
 ---
 
@@ -89,7 +89,7 @@ case1[:,6] = case1[:,0] *1000/ A     #応力の算出
 #################
 ```
 
-### 降伏点の算出方
+## 降伏点の算出方
 
 ---
 
@@ -109,21 +109,31 @@ print('降伏点：',sigma_y)
 print('引張強度：',sigma_u)
 ```
 
-### 最小二乗法を用いたヤング率の求め
+## 最小二乗法を用いたヤング率の求め
 ---
 
 - 実験の初期ノイズおよび，降伏点付近の塑性化の影響を排除するため，ヤング率の算出範囲は \\(0.2\sigma_y - 0.7\sigma_y\\)となった．</br>
 最小二乗法を用いて，曲線の傾き\\(k_1\\)は以下のように算出された：
 
-\\[k_1 =\frac{n \sum_{i=1}^{n} x_{i} y_{i}-\sum_{i=1}^{n} x_{i} \sum_{i=1}^{n} y_{i}}{n \sum_{i=1}^{n} x_{i}^{2}-\left(\sum_{i=1}^{n} x_{i}\right)^{2}}\\]
+<div>
+$$
+k_1 = \frac{n \sum_{i=1}^{n} x_{i} y_{i}-\sum_{i=1}^{n} x_{i} \sum_{i=1}^{n} y_{i}}{n \sum_{i=1}^{n} x_{i}^{2}-\left(\sum_{i=1}^{n} x_{i}\right)^{2}}
+$$
+</div>
 
-<br>
+</br>
  　コードで見やすいため，以下のように省略で表記する．
-$$ k_1 = \frac {na1 - a21\times a22} {nb1 - a21^2}$$
+$$
+k_1 = \frac {na1 - a21\times a22} {nb1 - a21^2}
+$$
 
 なお，決定係数\\(R^2\\)については，残差の二乗和を標本値の平均値 \\(\overline{y}\\)からの偏差の二乗和で割ったものを1から引いた値であり,以下のような式で算出した．
 
-$$R^{2} = 1-\frac{\sum_{i=1}^{N}\left(y_{i}-f_{i}\right)^{2}}{\sum_{j=1}^{N}\left(y_{j}-\bar{y}\right)^{2}}$$
+<div>
+$$
+R^{2} = 1-\frac{\sum_{i=1}^{N}\left(y_{i}-f_{i}\right)^{2}}{\sum_{j=1}^{N}\left(y_{j}-\bar{y}\right)^{2}}
+$$
+</br>
 
 ```python
 i = 0; a1 = 0; a21 = 0; a22 = 0; k1 = 0; b1 = 0; n=0;pc = 0
@@ -155,7 +165,7 @@ print('ポアソン比 = ',pc)
 print('決定係数R^2 = ',R2)
 ```
 
-### グラフの出力
+## グラフの出力
 
 ---
 
@@ -186,7 +196,7 @@ for i in range(3,y) :
 wb.save("111.xlsx")     #保存する
 ```
 
-## Full Code
+# Full Code
 
 1. フォルダ内に`.csv`ファイルを探して，名前を取得する．
 2. 生データを読み取り，データ処理を行う．
@@ -313,7 +323,7 @@ for filename in filenames:
   wb.save("test.xlsx")     #保存する
 ```
 
-### Matlab ver.
+## Matlab ver.
 
 ---
 
