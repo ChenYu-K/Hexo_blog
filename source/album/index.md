@@ -16,7 +16,9 @@ thumbnail: https://cdn.jsdelivr.net/gh/ChenYu-K/pic@main/background/2016-11-25%2
 
 > **MaoMao**
 <div class="justified-gallery">
-![Kana](http://cy-nas.myasustor.com:8585/portal/apis/fileExplorer/download.cgi?act=download&link=UQ4AAaEvK7r-ycFLh1DCLw&total=1&browser=chrome&mod_cntype=2&path=%2Fcycy%2Fphoto%2FMaoMao&file=DSC00389.JPG)
+
+![Kana](https://cdn.jsdelivr.net/gh/ChenYu-K/pic@main/maomao/DSC00388.jpg)
+
 </div>
 
 <br>
