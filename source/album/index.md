@@ -6,7 +6,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/ChenYu-K/pic@main/background/2016-11-25%2
 > **Trip Shoot**
 <div class="justified-gallery">
 
-![@Wakayama-kishi](https://s3.bmp.ovh/imgs/2022/04/18/48c59271943a27bc.jpg)
+![@Wakayama-kishi](https://cdn.jsdelivr.net/gh/ChenYu-K/pic@main/travelshoot/DSC01171.jpg)
 
 </div>
 
@@ -24,6 +24,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/ChenYu-K/pic@main/background/2016-11-25%2
 <div class="justified-gallery">
 
 ![Kana](https://cdn.jsdelivr.net/gh/ChenYu-K/pic@main/maomao/DSC00388.jpg)
+![Kana](https://cdn.jsdelivr.net/gh/ChenYu-K/pic@main/maomao/DSC00498.jpg)
 
 </div>
 
