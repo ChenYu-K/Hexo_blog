@@ -9,7 +9,7 @@ toc: true
 
 English ver:
 **Can't run abaqus in ubuntu Ubuntu 22.04.1 LTS with GPU(CUDA) accelerator. Initializing the CUDA Driver NO_DEVICE**
-You can view this site, is my anser.
+For the English version you can refer to my answer at the following link
 
 https://askubuntu.com/questions/1449122/cant-run-abaqus-in-ubuntu-ubuntu-22-04-1-lts-with-gpucuda-accelerator-initia
 
