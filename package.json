@@ -32,7 +32,7 @@
     "hexo-submit-urls-to-search-engine": "^2.1.0",
     "hexo-theme-landscape": "^1.0.0",
     "highlight.js": "^11.9.0",
-    "inferno": "^7.3.3",
+    "inferno": "^8.2.2",
     "inferno-create-element": "^7.3.3"
   }
 }
